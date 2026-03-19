@@ -1,0 +1,322 @@
+<!-- Code written by Chirenthen-->
+<!-- Visit my portfolio - https://chirrenthen.netlify.app -->
+<!-- Github - https://github.com/Chirenthen -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moveo | Chirenthen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="bg-circle-1"></div>
+        <div class="bg-circle-2"></div>
+        <div class="bg-circle-3"></div>
+    </div>
+    
+    <header class="glass-container header">
+        <nav>
+            <div class="logo">Moveo</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="glass-container hero-content">
+                <span class="badge">New Adventure Awaits</span>
+                <h1>Discover the World <span>Differently</span></h1>
+                <p>Immersive travel experiences curated just for you. Escape the ordinary and embrace the extraordinary.</p>
+                
+                <div class="search-box glass-container">
+                    <div class="input-group">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" id="destinationSearch" placeholder="Where to? (e.g., Maldives, Swiss)">
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-calendar-alt"></i>
+                        <input type="text" onfocus="(this.type='date')" placeholder="When?">
+                    </div>
+                    <button class="btn-search" id="mainSearchBtn"><i class="fas fa-search"></i> Search</button>
+                </div>
+
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <h3>150+</h3>
+                        <p>Destinations</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>12k+</h3>
+                        <p>Happy Travelers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>4.9/5</h3>
+                        <p>Avg. Rating</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinations Section -->
+        <section id="destinations" class="destinations section">
+            <h2 class="section-title">Popular Destinations</h2>
+            
+            <div class="filter-group">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="beach">Beach</button>
+                <button class="filter-btn" data-filter="mountain">Mountain</button>
+                <button class="filter-btn" data-filter="city">City</button>
+            </div>
+
+            <div class="cards-container" id="destinationsGrid">
+                <!-- Beach -->
+                <div class="card glass-container" data-category="beach" data-name="Maldives Paradise">
+                    <div class="card-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Beach_at_Fort_Lauderdale.jpg" alt="Maldives">
+                        <span class="price">$1,299</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Maldives Paradise</h3>
+                        <div class="rating"><i class="fas fa-star"></i> 4.9 (124 reviews)</div>
+                        <p>Luxury overwater villas and pristine turquoise lagoons.</p>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> All inclusive</li>
+                            <li><i class="fas fa-check"></i> Spa access</li>
+                        </ul>
+                        <a href="#" class="btn-card">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Mountain -->
+                <div class="card glass-container" data-category="mountain" data-name="Swiss Alps">
+                    <div class="card-img">
+                        <img src="https://alpexcursion.com/storage/media/Zermatt/zermatt-s-winter-in-switzerland.webp" alt="Swiss Alps">
+                        <span class="price">$899</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Swiss Alps</h3>
+                        <div class="rating"><i class="fas fa-star"></i> 4.8 (89 reviews)</div>
+                        <p>Breathtaking mountain views and world-class skiing.</p>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Ski pass</li>
+                            <li><i class="fas fa-check"></i> Guided tours</li>
+                        </ul>
+                        <a href="#" class="btn-card">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- City -->
+                <div class="card glass-container" data-category="city" data-name="Santorini Greece">
+                    <div class="card-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQByU--nRQd6IlgBoBKfFo61d-ljaKimZ9_gQ&s" alt="Santorini">
+                        <span class="price">$1,100</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Santorini, Greece</h3>
+                        <div class="rating"><i class="fas fa-star"></i> 4.9 (210 reviews)</div>
+                        <p>Iconic white-washed buildings and stunning sunsets.</p>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Sunset cruise</li>
+                            <li><i class="fas fa-check"></i> Wine tasting</li>
+                        </ul>
+                        <a href="#" class="btn-card">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- More Beach -->
+                <div class="card glass-container" data-category="beach" data-name="Bora Bora">
+                    <div class="card-img">
+                        <img src="https://transcode-v2.app.engoo.com/image/fetch/f_auto,c_lfill,w_300,dpr_3/https://assets.app.engoo.com/images/1kAeueYnHduTcWKYvgFkgy.jpeg" alt="Bora Bora">
+                        <span class="price">$1,500</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Bora Bora</h3>
+                        <div class="rating"><i class="fas fa-star"></i> 5.0 (56 reviews)</div>
+                        <p>Unmatched luxury in the heart of French Polynesia.</p>
+                        <a href="#" class="btn-card">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- More Mountain -->
+                <div class="card glass-container" data-category="mountain" data-name="Banff Canada">
+                    <div class="card-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Moraine_Lake_17092005.jpg" alt="Banff" />
+                        <span class="price">$750</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Banff, Canada</h3>
+                        <div class="rating"><i class="fas fa-star"></i> 4.7 (140 reviews)</div>
+                        <p>Vibrant turquoise lakes and majestic rocky peaks.</p>
+                        <a href="#" class="btn-card">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- More City -->
+                <div class="card glass-container" data-category="city" data-name="Tokyo Japan">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=500&q=80" alt="Tokyo">
+                        <span class="price">$950</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Tokyo, Japan</h3>
+                        <div class="rating"><i class="fas fa-star"></i> 4.9 (320 reviews)</div>
+                        <p>A neon-lit metropolis blending tradition and future.</p>
+                        <a href="#" class="btn-card">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="noResults" class="no-results glass-container">
+                <i class="fas fa-search" style="font-size: 3rem; margin-bottom: 20px;"></i>
+                <p>No destinations match your search. Try another keyword!</p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="glass-container exp-content">
+                <div class="exp-text">
+                    <h2>Our Experience Highlights</h2>
+                    <p>We provide more than just travel. We create memories that last a lifetime with our premium services.</p>
+                    <div class="exp-grid">
+                        <div class="exp-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Safe Travel</h4>
+                            <p>Premium insurance and 24/7 emergency support.</p>
+                        </div>
+                        <div class="exp-item">
+                            <i class="fas fa-concierge-bell"></i>
+                            <h4>Luxury Stay</h4>
+                            <p>Hand-picked 5-star hotels and private villas.</p>
+                        </div>
+                        <div class="exp-item">
+                            <i class="fas fa-route"></i>
+                            <h4>Expert Guides</h4>
+                            <p>Local experts who know the hidden gems.</p>
+                        </div>
+                        <div class="exp-item">
+                            <i class="fas fa-headset"></i>
+                            <h4>24/7 Support</h4>
+                            <p>We're always here to assist your journey.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp-visual">
+                    <div class="floating-img glass-container">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=400&q=80" alt="Travel map">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials section">
+            <h2 class="section-title">What Our Travelers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial glass-container">
+                    <p>"The best travel experience of my life! The glassmorphic design of their booking site actually reflects the clarity of their services."</p>
+                    <div class="user">
+                        <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="User">
+                        <div>
+                            <h4>Sarah Jenkins</h4>
+                            <p>Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial glass-container">
+                    <p>"Seamless booking and amazing support. Everything was perfect from takeoff to landing. Highly recommended!"</p>
+                    <div class="user">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                        <div>
+                            <h4>Marco Rossi</h4>
+                            <p>Photographer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter section">
+            <div class="glass-container newsletter-box">
+                <h2>Join Our Secret Travel Club</h2>
+                <p>Get exclusive deals and travel tips directly in your inbox.</p>
+                <form class="news-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn">Subscribe <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="glass-container contact-wrapper">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions? We'd love to hear from you.</p>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (234) 567 890</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@moveo.travel</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="row">
+                            <input type="text" placeholder="Full Name" required>
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <input type="text" placeholder="Subject">
+                        <textarea placeholder="Tell us about your dream destination..."></textarea>
+                        <button type="submit" class="btn btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section">
+        <div class="glass-container footer-content">
+            <div class="footer-top">
+                <div class="logo">Move<span>o</span></div>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Moveo Premium Travel Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
